@@ -1,0 +1,109 @@
+.app {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.filter-options {
+  width: 100%;
+  margin: 20px;
+}
+
+.filter-options h3 {
+  margin-bottom: 10px;
+}
+
+/* .filter-options {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.filter-options h3 {
+  margin-top: 0;
+  width: 100%;
+}
+
+.filter-options div {
+  flex: 2;
+  margin-right: 20px; 
+}
+
+.filter-options div:last-child {
+  margin-right: 12px;
+   
+} */
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.movie-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.filter-options {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-options h3 {
+  margin-top: 0;
+}
+
+.filter-options div {
+  margin-bottom: 10px;
+}
+
+/* Media queries for responsiveness */
+
+/* For tablets and smaller desktops */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+
+  .filter-options {
+    padding: 15px;
+  }
+}
+
+/* For smaller devices (phones) */
+@media (max-width: 767px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .filter-options {
+    padding: 10px;
+  }
+}
+
